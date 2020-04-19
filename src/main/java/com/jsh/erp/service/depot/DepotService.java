@@ -1,5 +1,6 @@
 package com.jsh.erp.service.depot;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.jsh.erp.constants.BusinessConstants;
@@ -11,6 +12,7 @@ import com.jsh.erp.exception.JshException;
 import com.jsh.erp.service.log.LogService;
 import com.jsh.erp.service.user.UserService;
 import com.jsh.erp.utils.StringUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -23,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
+@Slf4j
 @Service
 public class DepotService {
     private Logger logger = LoggerFactory.getLogger(DepotService.class);
@@ -306,5 +308,29 @@ public class DepotService {
             id = list.get(0).getId();
         }
         return id;
+    }
+
+    /*@Transactional(value = "transactionManager", rollbackFor = Exception.class)*/
+    public Depot getDepotTest(long id)throws Exception {
+        Depot result=null;
+        try{
+            result=depotMapper.selectByPrimaryKey(id);
+            log.info("depot result:" + JSON.toJSONString(result));
+            result=depotMapper.selectByPrimaryKey(id);
+            log.info("depot result:" + JSON.toJSONString(result));
+        }catch(Exception e){
+            JshException.readFail(logger, e);
+        }
+        return result;
+    }
+
+    public Long testcountDepot(String name, Integer type, String remark)throws Exception {
+        Long result=null;
+        try{
+            result=depotMapperEx.countsByDepot(name, type, remark);
+        }catch(Exception e){
+            JshException.readFail(logger, e);
+        }
+        return result;
     }
 }

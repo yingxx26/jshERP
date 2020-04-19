@@ -4,6 +4,7 @@ import com.jsh.erp.datasource.entities.Depot;
 import com.jsh.erp.datasource.entities.DepotEx;
 import com.jsh.erp.datasource.entities.DepotExample;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.Date;
 import java.util.List;
@@ -18,6 +19,9 @@ public interface DepotMapperEx {
             @Param("offset") Integer offset,
             @Param("rows") Integer rows);
 
+   /* @Select({
+            "select count(*) from jsh_depot"
+    })*/
     Long countsByDepot(
             @Param("name") String name,
             @Param("type") Integer type,
