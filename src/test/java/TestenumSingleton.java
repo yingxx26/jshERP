@@ -3,7 +3,7 @@ import com.singleton.enumSingleton;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Test {
+public class TestenumSingleton {
 
     public static void main(String args[]){
 //测试枚举单例
