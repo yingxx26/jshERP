@@ -24,7 +24,7 @@ public class DateUtilTest {
     @Autowired
     private  TestDate testDate ;
     /**
-     * 测试时间类
+     * 测试根据jdk版本 选择时间类
      * @throws Exception
      */
     @Test
