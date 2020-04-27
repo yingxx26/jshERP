@@ -1,7 +1,7 @@
-package com.decorator;
+package com.jsh.erp.testdecorator;
 
 import java.util.Date;
 
-public abstract class Component {
+public abstract class MyComponent {
     public abstract  double calcPrise(String user, Date begin, Date end)  ;
 }

@@ -1,4 +1,4 @@
-package com.decorator;
+package com.jsh.erp.testdecorator;
 
 import java.util.HashMap;
 import java.util.Map;

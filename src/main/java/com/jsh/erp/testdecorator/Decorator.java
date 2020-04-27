@@ -1,12 +1,12 @@
-package com.decorator;
+package com.jsh.erp.testdecorator;
 
 import java.util.Date;
 
-public abstract class Decorator extends Component {
+public abstract class Decorator extends MyComponent {
 
-    protected  Component c;
+    protected MyComponent c;
 
-    public Decorator(Component c){
+    public Decorator(MyComponent c){
          this.c=c;
     }
 

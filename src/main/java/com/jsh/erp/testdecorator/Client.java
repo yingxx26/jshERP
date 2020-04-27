@@ -1,11 +1,11 @@
-package com.decorator;
+package com.jsh.erp.testdecorator;
 
 public class Client
 {
     public static void main(String[] args) {
 
 //任意组合 装饰器模式
-        Component c1=new ConcreteComponent();
+        MyComponent c1=new ConcreteComponent();
         Decorator d1= new MonthPrizeDecorator(c1);
        // Decorator d2=new SumPrizeDecorator(d1);
         Decorator d3=new GroupPrizeDecorator(d1);

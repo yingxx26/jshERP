@@ -1,9 +1,11 @@
-package com.decorator;
+package com.jsh.erp.testdecorator;
+
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
 public class SumPrizeDecorator extends Decorator {
-    public SumPrizeDecorator(Component c) {
+    public SumPrizeDecorator(MyComponent c) {
         super(c);
     }
 

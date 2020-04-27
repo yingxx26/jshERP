@@ -1,9 +1,9 @@
-package com.decorator;
+package com.jsh.erp.testdecorator;
 
 import java.util.Date;
 
 public class MonthPrizeDecorator extends Decorator {
-    public MonthPrizeDecorator(Component c) {
+    public MonthPrizeDecorator(MyComponent c) {
         super(c);
     }
 

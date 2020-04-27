@@ -1,9 +1,11 @@
-package com.decorator;
+package com.jsh.erp.testdecorator;
+
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
 public class GroupPrizeDecorator extends Decorator {
-    public GroupPrizeDecorator(Component c) {
+    public GroupPrizeDecorator(MyComponent c) {
         super(c);
     }
 
