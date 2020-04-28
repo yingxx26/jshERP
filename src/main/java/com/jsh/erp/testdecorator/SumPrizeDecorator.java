@@ -3,11 +3,8 @@ package com.jsh.erp.testdecorator;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
-
+@Component("SumPrizeDecorator")
 public class SumPrizeDecorator extends Decorator {
-    public SumPrizeDecorator(MyComponent c) {
-        super(c);
-    }
 
     @Override
     public double calcPrise(String user, Date begin, Date end) {

@@ -1,11 +1,11 @@
 package com.jsh.erp.testdecorator;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
+@Component("MonthPrizeDecorator")
 
 public class MonthPrizeDecorator extends Decorator {
-    public MonthPrizeDecorator(MyComponent c) {
-        super(c);
-    }
 
     @Override
     public double calcPrise(String user, Date begin, Date end) {

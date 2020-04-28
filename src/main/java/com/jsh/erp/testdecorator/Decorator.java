@@ -6,8 +6,12 @@ public abstract class Decorator extends MyComponent {
 
     protected MyComponent c;
 
-    public Decorator(MyComponent c){
-         this.c=c;
+    public MyComponent getC() {
+        return c;
+    }
+
+    public void setC(MyComponent c) {
+        this.c = c;
     }
 
     @Override
