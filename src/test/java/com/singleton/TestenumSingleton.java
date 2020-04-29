@@ -1,3 +1,5 @@
+package com.singleton;
+
 import com.singleton.enumSingleton;
 
 import java.text.SimpleDateFormat;

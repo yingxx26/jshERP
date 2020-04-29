@@ -1,5 +1,5 @@
 package com.singleton;
-
+//单列 枚举内部类
 public class enumSingleton {
    private static boolean flag = true;
 
