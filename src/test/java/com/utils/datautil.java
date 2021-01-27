@@ -34,9 +34,9 @@ public class datautil {
             // 2020-03-25
                     System.out.println(LocalDate.now());
             // 21:18:51.064769800
-                    System.out.println(LocalTime.now());
+                    System.out.println(LocalTime.now().toString());
             // 2020
-                    System.out.println(Year.now());
+                    System.out.println(Year.now().toString());
             // 2020-03
                     System.out.println(YearMonth.now());
             // --03-25

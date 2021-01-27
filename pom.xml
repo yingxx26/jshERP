@@ -139,7 +139,11 @@
 		</dependency>
 
 
-
+		<dependency>
+			<groupId>com.alibaba.csp</groupId>
+			<artifactId>sentinel-core</artifactId>
+			<version>1.4.0</version>
+		</dependency>
 
 
 
