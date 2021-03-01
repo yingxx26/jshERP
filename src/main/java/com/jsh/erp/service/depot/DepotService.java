@@ -310,7 +310,7 @@ public class DepotService {
         return id;
     }
 
-    /*@Transactional(value = "transactionManager", rollbackFor = Exception.class)*/
+    @Transactional(value = "transactionManager", rollbackFor = Exception.class)
     public Depot getDepotTest(long id)throws Exception {
         Depot result=null;
         try{

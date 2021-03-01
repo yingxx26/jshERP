@@ -118,7 +118,7 @@
     -->
     select 
     <include refid="Base_Column_List" />
-    from jsh_depot
+    from jsh_depot for update
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
