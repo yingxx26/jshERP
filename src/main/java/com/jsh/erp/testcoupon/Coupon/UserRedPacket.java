@@ -1,15 +1,15 @@
-package com.jsh.erp.testcoupon;
+package com.jsh.erp.testcoupon.Coupon;
 
 import java.math.BigDecimal;
 
 /**
- * 用户优惠券类
+ * 用户红包类
  */
-public class UserCoupon {
+public class UserRedPacket {
     private int id;
     private int userId;
     private String sku;
-    private BigDecimal coupon;
+    private BigDecimal redPacket;
 
     public int getId() {
         return id;
@@ -35,11 +35,11 @@ public class UserCoupon {
         this.sku = sku;
     }
 
-    public BigDecimal getCoupon() {
-        return coupon;
+    public BigDecimal getRedPacket() {
+        return redPacket;
     }
 
-    public void setCoupon(BigDecimal coupon) {
-        this.coupon = coupon;
+    public void setRedPacket(BigDecimal redPacket) {
+        this.redPacket = redPacket;
     }
 }

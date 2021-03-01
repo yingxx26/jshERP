@@ -1,5 +1,8 @@
 package com.jsh.erp.testcoupon;
 
+import com.jsh.erp.testcoupon.Decorator.CouponDecorator;
+import com.jsh.erp.testcoupon.Decorator.RedPacketDecorator;
+
 import java.math.BigDecimal;
 import java.util.Map;
 

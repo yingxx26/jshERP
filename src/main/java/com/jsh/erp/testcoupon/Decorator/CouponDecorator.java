@@ -1,4 +1,9 @@
-package com.jsh.erp.testcoupon;
+package com.jsh.erp.testcoupon.Decorator;
+
+import com.jsh.erp.testcoupon.Decorator.BaseCountDecorator;
+import com.jsh.erp.testcoupon.IBaseCount;
+import com.jsh.erp.testcoupon.OrderDetail;
+import com.jsh.erp.testcoupon.PromotionType;
 
 import java.math.BigDecimal;
 

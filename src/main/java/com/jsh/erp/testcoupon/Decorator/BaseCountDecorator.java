@@ -1,4 +1,7 @@
-package com.jsh.erp.testcoupon;
+package com.jsh.erp.testcoupon.Decorator;
+
+import com.jsh.erp.testcoupon.IBaseCount;
+import com.jsh.erp.testcoupon.OrderDetail;
 
 import java.math.BigDecimal;
 

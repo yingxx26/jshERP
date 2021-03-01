@@ -1,5 +1,8 @@
 package com.jsh.erp.testcoupon;
 
+import com.jsh.erp.testcoupon.Coupon.UserCoupon;
+import com.jsh.erp.testcoupon.Coupon.UserRedPacket;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
