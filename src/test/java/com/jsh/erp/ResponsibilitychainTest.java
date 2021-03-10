@@ -3,6 +3,7 @@ package com.jsh.erp;
 import com.alibaba.fastjson.JSON;
 import com.jsh.erp.testresponsibilitychain.Handler;
 import com.jsh.erp.testresponsibilitychain.ResponsibilitychainManageer;
+import com.jsh.erp.testresponsibilitychain2.ResponsibilitychainManageer2;
 import com.jsh.erp.testservice.TestService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -25,6 +26,8 @@ public class ResponsibilitychainTest {
     private Map<String, Handler> handlerMap;
     @Autowired
     private ResponsibilitychainManageer responsibilitychainManageer;
+    @Autowired
+    private ResponsibilitychainManageer2 responsibilitychainManageer2;
 
     @Test
     public void responsibilitychainTest() throws Exception {
@@ -47,6 +50,14 @@ public class ResponsibilitychainTest {
     public void Test() throws Exception {
 
         String s = responsibilitychainManageer.handlerFeeRequset("小李", 600);
+
+        log.debug("结果:{}", s);
+    }
+
+    @Test
+    public void Test2() throws Exception {
+
+        String s = responsibilitychainManageer2.handlerFeeRequset("小李", 600);
 
         log.debug("结果:{}", s);
     }
